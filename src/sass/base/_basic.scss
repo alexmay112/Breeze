@@ -1,0 +1,47 @@
+input {
+    border: none;
+    box-sizing: border-box;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    display: inline-block;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: $main-text-color;
+    
+    &:hover {
+        text-decoration: none;
+        color: $main-text-color;
+        opacity: 0.8;
+        transition: 0.3s;
+    }
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+ul {
+    margin: 0;
+    padding: 0;
+    font-family: $main-font;
+    font-weight: 400;
+}
+
+li {
+    list-style: none;
+}
+.container {
+    max-width: 984px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
