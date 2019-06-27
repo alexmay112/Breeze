@@ -21,7 +21,11 @@
         align-items: center;
     }
     .contact-phone {
+        display: flex;
+        align-items: center;
+        font-size: 20px;
         &__number {
+            margin-left: 8px;
             color: #444444;
             font-size: 11px;
             font-family: $second-font;
@@ -44,14 +48,18 @@
         &__lang {
             display: flex;
         }
+        &__currency {
+            margin-left: 25px;
+        }
         &__item {
             margin-left: 1px;
         }
         &__link {
             padding: 15px 10px;
-            font-size: 11px;
+            font-size: 13px;
             text-transform: uppercase;
             font-family: $second-font;
+            background-color: #e6e9ed;
             &_active {
                 background-color: $main-accent-color;
                 color: #ffffff;
