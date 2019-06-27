@@ -3,6 +3,7 @@
 var gulp = require('gulp'),
   scss = require('gulp-sass'),
   sourcemaps = require('gulp-sourcemaps'),
+  autoprefixer = require('gulp-autoprefixer'),
   babel = require('gulp-babel'),
   concat = require('gulp-concat'),
   plumber = require('gulp-plumber'),
@@ -28,6 +29,7 @@ gulp.task('styles', function () {
     .pipe(plumber({errorHandler: handleError}))
     .pipe(sourcemaps.init())
     .pipe(scss({outputStyle: 'compressed', includePaths: SASS_INCLUDE_PATHS}))
+    .pipe(autoprefixer())
     .pipe(sourcemaps.write())
     .pipe(gulp.dest('./assets/css'))
 })
