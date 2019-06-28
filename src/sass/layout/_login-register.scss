@@ -1,9 +1,13 @@
 .login-popup,
 .register-popup {
     width: 250px;
-    padding: 15px;
+    margin: 5px auto;
+    padding: 20px;
     background-color: #f5f5f5;
-
+    border-radius: 5px;
+    &__cancel {
+        float: right;
+    }
 }
 .login-form,
 .register-form {
@@ -12,17 +16,32 @@
     &__name,
     &__password,
     &__title {
-        display: block;
-        max-width: 100%;
+        width: 100%;
     }
     &__title {
         text-align: center;
+        font-weight: 400;
     }
+
     &__confirm-password,
     &__name,
     &__password {
         margin-bottom: 15px;
-        border: 1px solid #777777;
+        padding: 5px;
+        font-size: 12px;
+        border: 1px solid rgba($main-accent-color, .8);
+        border-radius: 3px;
     }
-
+    &__submit {
+        padding: 5px 10px;
+        font-size: 14px;
+        border-radius: 3px;
+        background-color: rgba($main-accent-color, .3);
+        transition: all .3s;
+        &:hover {
+        background-color: $main-accent-color;
+        cursor: pointer;
+        color: #ffffff;
+        }
+    }
 }
