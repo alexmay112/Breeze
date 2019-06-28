@@ -1,9 +1,11 @@
+// Header top
 .header {
     &__top {
         padding: 38px 0;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        border-bottom: 1px solid #e0e0e0e0;
     }
     .search-form {
         display: flex;
@@ -64,5 +66,91 @@
         &__icon-cart {
             color: #000;
         }
+    }
+}
+// Main menu
+.main-menu {
+    padding-bottom: 20px;
+    &__list {
+        display: flex;
+        background-color: #f5f7f9;
+    }
+    &__link {
+        padding: 20px;
+        font-size: 14px;
+        color: #444444;
+        &_active {
+            color: #ffffff;
+            background-color: $main-accent-color;
+            opacity: 0.8;
+        }
+        &:hover {
+            color: #444444;
+            background-color: rgba($main-accent-color, .3);
+        }
+    }
+}
+// Slider
+.slider {
+    &__item {
+        min-height: 480px;
+        // display: flex;
+        background: url("../../../assets/img/slider-bg.png") no-repeat;
+        background-size: cover;
+    }
+    &__image {
+        margin: auto;
+    }
+    &__text {
+        flex-basis: 50%;
+    }
+    &__description,
+    &__title {
+        padding: 8px 11px;
+        background-color: rgba(#fff, .7);
+        display: inline-block;
+    }
+    &__title {
+        margin: 70px 0 18px;
+        font-size: 36px;
+        font-weight: 400;
+    }
+    &__description {
+        margin: 2px 0;
+        font-size: 16px;
+    }
+
+    .slick-prev {
+        left: 0;
+        z-index: 10;
+    }
+    .slick-next {
+        right: 0;
+    }
+}
+.slick-initialized .slick-slide {
+    display: flex;
+}
+.slick-dots {
+    padding-right: 20px;
+    bottom: 20px;
+    text-align: right;
+}
+.slick-dots li button {
+    border-radius: 100%;
+    background-color: rgba(255, 255, 255, .6);
+    outline: none;
+    &::before {
+        font-size: 12px;
+        color: #222222;
+        opacity: 1;
+        outline: none;
+    }
+}
+.slick-dots li.slick-active button {
+    background-color: rgba(66, 64, 64, .8);
+
+    &::before {
+        color: #ffffff;
     }
 }
