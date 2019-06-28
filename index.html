@@ -36,6 +36,7 @@
                         or
                         <a href="#" class="authorization__create-account">create an account</a>.
                     </p>
+
                 </div>
                 <div class="toggler">
                     <ul class="toggler__lang">
@@ -69,6 +70,53 @@
                 </div>
             </div>
         </div>
+
+        <div class="login-popup">
+            <a href="#" class="login-popup__cancel">Cancel</a>
+            <form action="#" class="login-form" method="POST">
+                <h3 class="login-form__title">Log in please</h3>
+                <input
+                    class="login-form__name"
+                    type="text"
+                    name="login"
+                    placeholder="login"
+                    required="required">
+                <input
+                    class="login-form__password"
+                    type="password"
+                    name="password"
+                    placeholder="password"
+                    required="required">
+                <input class="login-form__submit" type="submit" value="Enter">
+            </form>
+        </div>
+
+        <div class="register-popup">
+            <a href="#" class="register-form__cancel">Cancel</a>
+            <form action="#" class="register-form" method="POST">
+                <h3 class="register-form__title">Register please</h3>
+                <input
+                    class="register-form__name"
+                    type="text"
+                    name="login"
+                    placeholder="login"
+                    required="required">
+                <input
+                    class="register-form__password"
+                    type="password"
+                    name="password"
+                    placeholder="password"
+                    required="required">
+                <input
+                    class="register-form__confirm-password"
+                    type="password"
+                    name="password"
+                    placeholder="confirm password"
+                    required="required">
+                <input class="register-form__submit" type="submit" value="Enter">
+            </form>
+        </div>
+
         <header class="header">
             <div class="container">
                 <div class="header__top">
@@ -199,31 +247,15 @@
             </div>
         </header>
 
-        <!-- <nav class="navbar">
-            <button class="navbar-toggler">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Solids</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Liquids</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Spray</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Electric</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">For cars</a>
-                </li>
-            </ul>
-        </nav> -->
+        <!-- <nav class="navbar"> <button class="navbar-toggler"> <span
+        class="navbar-toggler-icon"></span> </button> <ul class="navbar-nav"> <li
+        class="nav-item"> <a class="nav-link" href="#">Home</a> </li> <li
+        class="nav-item"> <a class="nav-link" href="#">Solids</a> </li> <li
+        class="nav-item"> <a class="nav-link" href="#">Liquids</a> </li> <li
+        class="nav-item"> <a class="nav-link" href="#">Spray</a> </li> <li
+        class="nav-item"> <a class="nav-link" href="#">Electric</a> </li> <li
+        class="nav-item"> <a class="nav-link" href="#">For cars</a> </li> </ul> </nav>
+        -->
 
         <script src="assets/js/libs.js"></script>
         <script src="assets/js/main.js"></script>
