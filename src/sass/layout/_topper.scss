@@ -1,18 +1,25 @@
-.lines-block__item {
-    height: 3px;
+.lines-block {
+    width: 100%;
+    position: absolute;
+    top: 0;
 
-    &_first {
-        background-color: $main-accent-color;
-    }
-    &_middle {
-        background-color: #7fcbce;
-    }
-    &_last {
-        background-color: #aadce0;
+    &__item {
+        height: 3px;
+
+        &_first {
+            background-color: $main-accent-color;
+        }
+        &_middle {
+            background-color: #7fcbce;
+        }
+        &_last {
+            background-color: #aadce0;
+        }
     }
 }
 
 .topper {
+    position: relative;
     background-color: #f5f7f9;
 
     &__wrapper {
@@ -55,7 +62,7 @@
             margin-left: 1px;
         }
         &__link {
-            padding: 15px 10px;
+            padding: 24px 10px 15px;
             font-size: 13px;
             text-transform: uppercase;
             font-family: $second-font;
