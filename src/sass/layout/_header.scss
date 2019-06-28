@@ -94,8 +94,7 @@
 .slider {
     &__item {
         min-height: 480px;
-        // display: flex;
-        background: url("../../../assets/img/slider-bg.png") no-repeat;
+        background: url("../assets/img/slider-bg.png") no-repeat;
         background-size: cover;
     }
     &__image {
