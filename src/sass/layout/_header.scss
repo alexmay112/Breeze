@@ -3,6 +3,7 @@
     &__top {
         padding: 38px 0;
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
         border-bottom: 1px solid #e0e0e0e0;
@@ -14,6 +15,7 @@
 
         &__input {
             max-width: 200px;
+            margin-left: 10px;
             padding: 13px 0 13px 10px;
             border: 1px solid #cccccc;
             border-right: none;
@@ -74,6 +76,7 @@
     padding-bottom: 20px;
     &__list {
         display: flex;
+        flex-wrap: wrap;
         background-color: #f5f7f9;
     }
     &__link {
@@ -96,6 +99,7 @@
 .slider {
     &__item {
         min-height: 480px;
+        display: flex;
         background: url("../img/slider-bg.png") no-repeat;
         background-size: cover;
     }
@@ -103,8 +107,8 @@
         margin: auto;
     }
     &__text {
-        flex-basis: 50%;
         display: flex;
+        flex-basis: 50%;
         flex-direction: column;
     }
     &__description,
@@ -189,8 +193,11 @@
         flex-wrap: wrap;
     }
     &__item {
-        flex-basis: 18%;
+        width: calc(100%/3 - 12px);
         padding: 20px 15px 20px 110px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         border: 1px solid #e0e0e0;
         border-radius: 2px;
         background-position: 15px 50%;
@@ -216,6 +223,63 @@
         font-size: 20px;
         font-family: $second-font;
         font-weight: 300;
-        color: #777777;
+        color: #2e1d1d;
+    }
+}
+
+@media (max-width: 420px) {
+    .features__item {
+        width: 100%;
+        padding: 20px 15px 20px 110px;
+    }
+}
+
+@media (max-width: 550px) {
+    .features__list {
+        justify-content: space-around;
+    }
+    .features__item {
+        max-width: 220px;
+        margin-bottom: 20px;
+        background-position: 15px 50%;
+        padding: 20px 15px 20px 110px;
+    }
+}
+
+@media (max-width: 716px) {
+    .slider {
+        &__item {
+            flex-direction: column;
+            align-items: center;
+        }
+        &__title {
+            margin-top: 0;
+        }
+        &__text {
+            margin-bottom: 20px;
+        }
+    }
+}
+@media (max-width: 699px) {
+    .features__item {
+        padding: 110px 15px 15px;
+        background-position: 50% 15px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 799px) {
+    .features {
+        &__title {
+            font-size: 20px;
+        }
+        &__description {
+            font-size: 18px;
+        }
+    }
+}
+@media (max-width: 814px) {
+    .header__top {
+        justify-content: space-around;
     }
 }

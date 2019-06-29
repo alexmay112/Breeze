@@ -26,6 +26,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        flex-wrap: wrap;
     }
     .contact-phone {
         display: flex;
@@ -39,6 +40,7 @@
         }
     }
     .authorization {
+        padding: 0 10px;
         &__text {
             color: $main-text-color;
             font-size: 12px;
@@ -76,5 +78,20 @@
                 background-color: #aadce0;
             }
         }
+    }
+}
+
+@media (max-width: 401px) {
+    .toggler {
+        order: -1;
+    }
+}
+
+@media (max-width: 716px) {
+    .topper__wrapper {
+        justify-content: space-around;
+    }
+    .authorization {
+        order: 3;
     }
 }
