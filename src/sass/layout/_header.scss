@@ -12,7 +12,7 @@
         font-size: 0;
     }
     .search-form {
-        margin-bottom: 10px;
+        // margin-bottom: 10px;
         display: flex;
         align-items: space-between;
         position: relative;
@@ -116,7 +116,7 @@
         position: absolute;
         z-index: 10;
         border: 1px solid #e0e0e0;
-        top: 58px;
+        top: 56px;
         box-shadow: 0 2px 5px rgba(132, 132, 132, 0.35);
         &__item:not(:last-child) {
             border-bottom: 1px solid #e0e0e0;

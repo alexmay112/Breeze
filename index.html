@@ -35,8 +35,52 @@
                         <a href="#" class="authorization__login">login</a>
                         or
                         <a href="#" class="authorization__create-account">create an account</a>.
-                    </p>
+                        <div class="login-popup">
+                            <a href="#" class="login-popup__cancel">Close</a>
+                            <form action="#" class="login-form" method="POST">
+                                <h3 class="login-form__title">Log in please</h3>
+                                <input
+                                    class="login-form__name"
+                                    type="text"
+                                    name="login"
+                                    placeholder="login"
+                                    required="required">
+                                <input
+                                    class="login-form__password"
+                                    type="password"
+                                    name="password"
+                                    placeholder="password"
+                                    required="required">
+                                <input class="login-form__submit" type="submit" value="Enter">
+                            </form>
+                        </div>
+                        <div class="register-popup">
+                            <a href="#" class="register-popup__cancel">Close</a>
+                            <form action="#" class="register-form" method="POST">
+                                <h3 class="register-form__title">Register please</h3>
+                                <input
+                                    class="register-form__name"
+                                    type="text"
+                                    name="login"
+                                    placeholder="login"
+                                    required="required">
+                                <input
+                                    class="register-form__password"
+                                    type="password"
+                                    name="password"
+                                    placeholder="password"
+                                    required="required">
+                                <input
+                                    class="register-form__confirm-password"
+                                    type="password"
+                                    name="password"
+                                    placeholder="confirm password"
+                                    required="required">
+                                <input class="register-form__submit" type="submit" value="Create an account">
+                            </form>
+                        </div>
 
+                    </p>
                 </div>
                 <div class="toggler">
                     <ul class="toggler__lang">
@@ -71,52 +115,6 @@
             </div>
         </div>
 
-        <div class="login-popup">
-            <a href="#" class="login-popup__cancel">Close</a>
-            <form action="#" class="login-form" method="POST">
-                <h3 class="login-form__title">Log in please</h3>
-                <input
-                    class="login-form__name"
-                    type="text"
-                    name="login"
-                    placeholder="login"
-                    required="required">
-                <input
-                    class="login-form__password"
-                    type="password"
-                    name="password"
-                    placeholder="password"
-                    required="required">
-                <input class="login-form__submit" type="submit" value="Enter">
-            </form>
-        </div>
-
-        <div class="register-popup">
-            <a href="#" class="register-popup__cancel">Close</a>
-            <form action="#" class="register-form" method="POST">
-                <h3 class="register-form__title">Register please</h3>
-                <input
-                    class="register-form__name"
-                    type="text"
-                    name="login"
-                    placeholder="login"
-                    required="required">
-                <input
-                    class="register-form__password"
-                    type="password"
-                    name="password"
-                    placeholder="password"
-                    required="required">
-                <input
-                    class="register-form__confirm-password"
-                    type="password"
-                    name="password"
-                    placeholder="confirm password"
-                    required="required">
-                <input class="register-form__submit" type="submit" value="Create an account">
-            </form>
-        </div>
-
         <header class="header">
             <div class="container">
                 <div class="header__top">
@@ -128,7 +126,6 @@
                             </a>
                         </h1>
                     </div>
-
                     <form action="#" method="GET" class="search-form">
                         <input
                             type="text"
@@ -137,7 +134,6 @@
                         <input type="submit" class="search-form__submit">
                         <i class="fas fa-search search-form__icon"></i>
                     </form>
-
                     <div class="user-menu">
                         <ul class="user-menu__list">
                             <li class="user-menu__item">

@@ -21,7 +21,6 @@
 .topper {
     position: relative;
     background-color: #f5f7f9;
-
     &__wrapper {
         display: flex;
         justify-content: space-between;
@@ -44,6 +43,7 @@
         &__text {
             color: $main-text-color;
             font-size: 12px;
+            position: relative;
         }
         &__create-account,
         &__login {
