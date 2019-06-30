@@ -60,3 +60,10 @@
 .user-menu__icon-cart {
     color: #000;
 }
+
+.user-menu {
+    .authorization__create-account,
+    .authorization__login {
+        color: #777777;
+    }
+}
