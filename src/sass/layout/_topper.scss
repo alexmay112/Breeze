@@ -63,12 +63,14 @@
         &__item {
             margin-left: 1px;
         }
-        &__link {
+        &__link-currency,
+        &__link-lang {
             padding: 24px 10px 15px;
             font-size: 13px;
             text-transform: uppercase;
             font-family: $second-font;
             background-color: #e6e9ed;
+            outline: none;
             &_active {
                 background-color: $main-accent-color;
                 color: #ffffff;

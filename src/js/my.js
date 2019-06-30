@@ -25,4 +25,20 @@ $(document).ready(function () {
         e.preventDefault();
         $('.register-popup').removeClass('register-popup_active');
     })
+
+    $('.toggler__link-lang').on('click', function (e) {
+        e.preventDefault();
+        $('.toggler__link-lang').each(function () {
+            $(this).removeClass('toggler__link-lang_active');
+        })
+        $(this).addClass('toggler__link-lang_active');
+    })
+
+    $('.toggler__link-currency').on('click', function (e) {
+        e.preventDefault();
+        $('.toggler__link-currency').each(function () {
+            $(this).removeClass('toggler__link-currency_active');
+        })
+        $(this).addClass('toggler__link-currency_active');
+    })
 });
