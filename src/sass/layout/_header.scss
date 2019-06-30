@@ -22,9 +22,7 @@
             margin-left: 10px;
             padding: 11px 36px 11px 11px;
             border: 1px solid #cccccc;
-            // border-right: none;
             border-radius: 2px;
-            // border-bottom-left-radius: 2px;
             font-size: 12px;
             font-family: $second-font;
             &:focus {
@@ -60,11 +58,22 @@
         }
         &__item {
             font-family: $second-font;
-
+            &:not(:first-child) .user-menu__text {
+                border-left: 1px solid #e0e0e0;
+            }
             &_cart {
-                // padding: 13px 11px;
-                // background-color: #f1f3f5;
                 border-radius: 2px;
+                position: relative;
+                &:hover {
+                    // color: #ffffff;
+                    .sub-menu-cart {
+                        display: block;
+                    }
+                    .user-menu__icon-cart,
+                    .user-menu__link_cart {
+                        color: #ffffff;
+                    }
+                }
             }
         }
         &__link {
@@ -73,20 +82,99 @@
             border-radius: 2px;
             &:hover {
                 background-color: $main-accent-color;
+                & .user-menu__text {
+                    border-left: 1px solid $main-accent-color;
+                }
             }
 
             &_cart {
-                // border-left: none;
+                position: relative;
+                border-left: none;
                 padding-left: 13px;
+                color: #444444;
                 background-color: #f1f3f5;
             }
+
         }
         &__text {
             padding-left: 13px;
-            border-left: 1px solid #e0e0e0;
         }
         &__icon-cart {
             color: #000;
+        }
+        .sub-menu-cart {
+            display: none;
+            padding: 22px;
+            position: absolute;
+            left: -240px;
+            border: 1px solid #e0e0e0;
+            box-shadow: 0 2px 5px rgba(132, 132, 132, 0.35);
+            background-color: #fff;
+            z-index: 20;
+            &__title {
+                font-family: $main-font;
+                color: $main-text-color;
+                font-size: 13px;
+            }
+            .product-list {
+                padding-bottom: 10px;
+                &__item {
+                    padding: 11px 0;
+                    position: relative;
+                    &:not(:last-child) {
+                        border-bottom: 1px solid #e0e0e0;
+                    }
+                }
+                .delete-product {
+                    position: absolute;
+                    right: 0;
+                    top: 11px;
+                    transition: all ease 0.3s;
+                    &:hover {
+                        transform: rotate(90deg);
+                    }
+                    &::after {
+                        content: "\f00d";
+                        font-family: "Font Awesome 5 Free";
+                        font-weight: 900;
+                    }
+                }
+                &__link {
+                    display: flex;
+                    justify-content: space-between;
+                }
+                &__image {
+                    width: 56px;
+                    height: 56px;
+                    border: 1px solid #e0e0e0;
+                }
+                &__text {
+                    padding: 0 11px;
+                }
+                &__title {
+                    margin: 0 0 10px;
+                    font-size: 12px;
+                    font-family: $second-font;
+                }
+                &__amount {
+                    font-family: $main-font;
+                    font-weight: bold;
+                }
+            }
+            .button-list {
+                &__item {
+                    display: inline-block;
+                }
+                &__link {
+                    padding: 12px 10px;
+                    border-radius: 2px;
+                    color: #ffffff;
+                    background-color: #444444;
+                    &:hover {
+                        background-color: $main-accent-color;
+                    }
+                }
+            }
         }
     }
 }
