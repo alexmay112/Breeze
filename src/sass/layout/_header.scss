@@ -2,11 +2,14 @@
 .header {
     &__top {
         padding: 38px 0;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center;
         border-bottom: 1px solid #e0e0e0e0;
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
     }
     .logo__link {
         font-size: 0;
@@ -122,6 +125,7 @@
             }
             .product-list {
                 padding-bottom: 10px;
+
                 &__item {
                     padding: 11px 0;
                     position: relative;
@@ -134,6 +138,7 @@
                     right: 0;
                     top: 11px;
                     transition: all ease 0.3s;
+                    
                     &:hover {
                         transform: rotate(90deg);
                     }
