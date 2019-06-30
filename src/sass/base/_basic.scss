@@ -19,10 +19,12 @@ a {
         transition: 0.3s;
     }
 }
+
 body {
     position: relative;
-    overflow: hidden;
+    overflow-x: hidden;
 }
+
 body,
 ul {
     margin: 0;

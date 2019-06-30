@@ -27,77 +27,61 @@
         align-items: center;
         flex-wrap: wrap;
     }
-    .contact-phone {
-        display: flex;
-        align-items: center;
-        font-size: 20px;
-        &__number {
-            margin-left: 8px;
-            color: #444444;
-            font-size: 11px;
-            font-family: $second-font;
-        }
-    }
-    .authorization {
-        padding: 0 10px;
-        &__text {
-            color: $main-text-color;
-            font-size: 12px;
-            position: relative;
-        }
-        &__create-account,
-        &__login {
-            color: $main-accent-color;
-        }
-    }
-    .toggler {
-        display: flex;
+}
 
-        &__currency,
-        &__lang {
-            display: flex;
-        }
-        &__currency {
-            margin-left: 25px;
-        }
-        &__item {
-            margin-left: 1px;
-        }
-        &__link-currency,
-        &__link-lang {
-            padding: 24px 10px 15px;
-            font-size: 13px;
-            text-transform: uppercase;
-            font-family: $second-font;
-            background-color: #e6e9ed;
-            outline: none;
-            &_active {
-                background-color: $main-accent-color;
-                color: #ffffff;
-                opacity: 0.8;
-            }
-            &:hover {
-                background-color: #aadce0;
-            }
-        }
+.contact-phone {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    &__number {
+        margin-left: 8px;
+        color: #444444;
+        font-size: 11px;
+        font-family: $second-font;
     }
 }
 
-@media (max-width: 401px) {
-    .toggler {
-        order: -1;
+.authorization {
+    padding: 0 10px;
+    &__text {
+        color: $main-text-color;
+        font-size: 12px;
+        position: relative;
+    }
+    &__create-account,
+    &__login {
+        color: $main-accent-color;
     }
 }
 
-@media (max-width: 716px) {
-    .topper__wrapper {
-        justify-content: space-around;
+.toggler {
+    display: flex;
+
+    &__currency,
+    &__lang {
+        display: flex;
     }
-    .topper .authorization {
-        padding: 15px 0;
-        order: 3;
+    &__currency {
+        margin-left: 25px;
     }
-    .contact-phone {
-        padding-top: 15px;
+    &__item {
+        margin-left: 1px;
+    }
+    &__link-currency,
+    &__link-lang {
+        padding: 24px 10px 15px;
+        font-size: 13px;
+        text-transform: uppercase;
+        font-family: $second-font;
+        background-color: #e6e9ed;
+        outline: none;
+        &_active {
+            background-color: $main-accent-color;
+            color: #ffffff;
+            opacity: 0.8;
+        }
+        &:hover {
+            background-color: #aadce0;
+        }
     }
 }

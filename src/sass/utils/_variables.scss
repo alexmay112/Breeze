@@ -1,3 +1,8 @@
+$main-font: 'Bitter', serif;
+$second-font: 'Segoe UI', sans-serif;
+$main-accent-color: #59b7c2;
+$main-text-color: #777777;
+
 $breakpoints: (
   'small-min': (min-width: 320px),
   'medium-min': (min-width: 800px),
@@ -5,7 +10,3 @@ $breakpoints: (
   'huge-min': (min-width: 1200px),
 //  'large-huge-min': (min-width: 1025px) and (max-width: 1200px),
 );
-$main-font: 'Bitter', serif;
-$second-font: 'Segoe UI', sans-serif;
-$main-accent-color: #59b7c2;
-$main-text-color: #777777;

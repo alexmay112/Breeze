@@ -1,0 +1,40 @@
+.features {
+    &__list {
+        margin-bottom: 40px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__item {
+        width: calc(100%/3 - 12px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border: 1px solid #e0e0e0;
+        border-radius: 2px;
+        background-position: 15px 50%;
+        background-repeat: no-repeat;
+        &_price {
+            background-image: url("../img/icon-sale.png");
+        }
+        &_smells {
+            background-image: url("../img/icon-smells.png");
+        }
+        &_natural {
+            background-image: url("../img/icon-natural.png");
+        }
+    }
+    &__title {
+        margin: 0;
+        font-size: 24px;
+        font-weight: 400;
+        color: #444444;
+    }
+    &__description {
+        margin: 0;
+        font-size: 20px;
+        font-family: $second-font;
+        font-weight: 300;
+        color: #2e1d1d;
+    }
+}
