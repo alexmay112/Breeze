@@ -53,6 +53,11 @@
             text-indent: -900px;
         }
     }
+    @media (max-width: 380px) {
+        .search-form {
+            margin-bottom: 20px;
+        }
+    }
     .user-menu {
         &__list {
             display: flex;
@@ -104,6 +109,7 @@
         }
         &__text {
             padding-left: 13px;
+            display: inline-block;
         }
         &__icon-cart {
             color: #000;
@@ -189,7 +195,7 @@
 }
 
 @media (max-width: 814px) {
-    .header__top {
+    .header__top .container {
         justify-content: space-around;
     }
 }

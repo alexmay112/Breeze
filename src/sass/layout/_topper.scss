@@ -93,7 +93,11 @@
     .topper__wrapper {
         justify-content: space-around;
     }
-    .authorization {
+    .topper .authorization {
+        padding: 15px 0;
         order: 3;
+    }
+    .contact-phone {
+        padding-top: 15px;
     }
 }

@@ -2,7 +2,7 @@
 .register-popup {
     width: 250px;
     position: absolute;
-    top: -300px;
+    top: -500px;
     left: 50%;
     padding: 20px;
     text-align: right;
@@ -42,6 +42,9 @@
         &:focus {
             border: 1px solid $main-accent-color;
         }
+    }
+    &__remember {
+        outline: none;
     }
     &__submit {
         padding: 5px 10px;
